@@ -1,0 +1,258 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* png ki size chota karne k liye
+
+#png {
+    height: 100px;
+    width: 100px;
+} */
+
+/* CSS Variables */
+:root{
+    --navbar-height: 50px;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+#navbar::before{
+    content: "";
+    height: 50%;
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+/* navigation bar: logo and list */
+
+#logo{
+   margin: 10px 34px;
+}
+#logo img{
+    height: 60px;
+    margin: 11px -4px;
+}
+
+
+/* navigation bar: list styling */
+
+#navbar ul{
+    display: flex;
+    font-family: 'Oswald', sans-serif;
+}
+
+#navbar ul li{
+    /* color: white; */
+    list-style-type: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration:none;
+}
+
+#navbar ul li a:hover{
+    color:black;
+    background-color: white;
+}
+
+/* home section */
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 2px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 650px;
+    top: 0;
+    left: 0;
+}
+
+#home::before{
+    content: "";
+    height: 95%;
+    width: 100%;
+    background: url('../lily-banse--YHSwy6uqvk-unsplash.jpg') no-repeat center center/cover ;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.89;
+    top: 0;
+}
+
+#home h1{
+    color: white;
+    text-align:center;
+    font-family: 'Roboto', sans-serif;
+}
+
+#home p{
+    color: white;
+    text-align:center;
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+#home button{
+    background-color: white;
+    border-radius: 30px;
+}
+
+
+/* services section */
+
+
+#services{
+    margin:34px;
+    display: flex;
+    /* border: 1px solid black; */
+    height: 400px;
+}
+#services .box{
+    border: 1px solid black;
+    padding: 34px;
+    margin: 2px 10px;
+    border-radius: 23px;
+    background-color:rgb(222 232 232);
+    height: 300px;
+    
+}
+#services .box img{
+    height: 100px;
+    margin: auto;
+    display: block;
+}
+
+#services.box p{
+    font-family: 'Roboto', sans-serif;
+}
+
+/* clients section */
+#clients-section{
+    height: 250px;
+    /* border: 1px solid black; */
+
+}
+
+#clients-section::before{
+    content: "";
+    position: absolute;
+    background: url('../client-background2.jpg') no-repeat center center/cover;
+    height: 250px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#client-item{
+    padding:34px;
+}
+#clients img{
+   height: 100px;
+}
+
+
+/* contact section  */
+#contact{
+    position: relative;
+    height: 474px;
+    /* border: 1px solid black; */
+}
+
+#contact::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+    background:url('../contact.jpg') no-repeat center center/cover;
+}
+
+#contact-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 34px;
+}
+
+#contact-box input{
+    padding:0.5rem;
+    /* border-radius: 10px; */
+}
+
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+}
+
+
+#contact-box form{
+    width: 40%;
+}
+
+
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Syne', sans-serif;
+}
+
+/* utility class */
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 9px 20px;
+}
+
+.h-primary{
+    font-size: 3.8rem;
+    padding: 12px 12px;
+    font-family: 'Syne', sans-serif;
+    /* justify-content: center;
+    align-items: center; */
+}
+.h-secondary{
+    font-size: 2.8rem;
+    padding: 12px 12px;
+    font-family: 'Roboto', sans-serif;
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: white;
+    margin:17px;
+    font-size: 1.5rem;
+    border-radius: 15px;
+    cursor: pointer;
+    font-family: 'Oswald', sans-serif;
+}
+.center{
+    text-align: center;
+}
